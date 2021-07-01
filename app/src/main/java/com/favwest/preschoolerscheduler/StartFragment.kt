@@ -1,6 +1,5 @@
 package com.favwest.preschoolerscheduler
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,19 +8,11 @@ import android.view.ViewGroup
 
 class StartFragment : Fragment() {
 
-    private lateinit var viewModel: StartViewModel
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.start_fragment, container, false)
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_start, container, false)
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(StartViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
 }

@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
     app:startDestination="@id/startFragment">
+
+
     <fragment
         android:id="@+id/startFragment"
         android:name="com.favwest.preschoolerscheduler.StartFragment"
-        android:label="StartFragment"
-        tools:layout="@layout/start_fragment"/>
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
 </navigation>
