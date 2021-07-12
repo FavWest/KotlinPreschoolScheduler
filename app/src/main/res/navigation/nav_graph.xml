@@ -10,5 +10,30 @@
         android:id="@+id/startFragment"
         android:name="com.favwest.preschoolerscheduler.StartFragment"
         android:label="fragment_start"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_newScheduleFragment"
+            app:destination="@id/newScheduleFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_editStudentInfoFragment"
+            app:destination="@id/editStudentInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editStudentInfoFragment"
+        android:name="com.favwest.preschoolerscheduler.EditStudentInfoFragment"
+        android:label="edit_student_info_fragment"
+        tools:layout="@layout/edit_student_info_fragment" >
+        <action
+            android:id="@+id/action_editStudentInfoFragment_to_newScheduleFragment"
+            app:destination="@id/newScheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newScheduleFragment"
+        android:name="com.favwest.preschoolerscheduler.NewScheduleFragment"
+        android:label="new_schedule_fragment"
+        tools:layout="@layout/new_schedule_fragment" >
+        <action
+            android:id="@+id/action_newScheduleFragment_to_editStudentInfoFragment"
+            app:destination="@id/editStudentInfoFragment" />
+    </fragment>
 </navigation>

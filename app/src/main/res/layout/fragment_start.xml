@@ -5,10 +5,27 @@
     android:layout_height="match_parent"
     tools:context=".StartFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="START PAGE" />
+
+    <Button
+        android:id="@+id/edit_student_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Student Info" />
+
+    <Button
+        android:id="@+id/new_schedule_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Schedule" />
+    </LinearLayout>
 
 </FrameLayout>
